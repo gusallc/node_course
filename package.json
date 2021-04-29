@@ -1,0 +1,25 @@
+{
+  "name": "nodej-practice",
+  "version": "0.0.1",
+  "description": "Learning node-js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusallc/node_course.git"
+  },
+  "author": "Gustavo Chiclla Castañeda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gusallc/node_course/issues"
+  },
+  "homepage": "https://github.com/gusallc/node_course#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
