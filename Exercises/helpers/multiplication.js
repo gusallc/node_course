@@ -3,11 +3,12 @@ const { writeFileSync } = require("fs")
 const createFile = async (base) => {
 
     try {
-        console.log('===================================');
-        console.log('   MULTIPLICATION TABLE   ', base);
-        console.log('===================================');
 
         let output = ''
+        output +=('===================================\n');
+        output +=('   MULTIPLICATION TABLE   '+ base +'\n');
+        output +=('===================================\n');
+
         for (let i = 0; i < 10; i++) {
             output += `${base} x ${i} = ${base * i} \n`
         }

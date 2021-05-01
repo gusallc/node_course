@@ -14,7 +14,7 @@ const number = 9
 //Second method
 const createAndReadFile = async (base) => {
         const write = await createFile(base)
-        const read = await readFile("./dfjdkfj");
+        const read = await readFile(write);
         return read;
 }
 
