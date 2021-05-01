@@ -1,29 +1,6 @@
+const yargs = require("../config/yargs")
 const { createFile } = require("./helpers/multiplication")
 const { readFile } = require("./read-sync")
-const yargs = require("yargs")
-    //configuration alias -b and --base
-    .option('b', {
-        alias: 'base',
-        type: 'number',
-        demandOption: true
-
-    })
-    .check((yargs, options) => {
-        console.log('yargs', yargs);
-        if (isNaN(yargs.b)) {
-            throw 'The base is required'
-        }
-        return true;
-    })
-    .option('l', {
-        alias: 'list',
-        type: 'boolean',
-        demandOption: true,
-        default: false
-    })
-    .argv;
-
-
 
 //input command =>
 // base with alias -b or --b, type =>number
