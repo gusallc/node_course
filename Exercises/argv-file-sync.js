@@ -1,6 +1,7 @@
 const yargs = require("../config/yargs")
 const { createFile } = require("./helpers/multiplication")
 const { readFile } = require("./read-sync")
+require("colors")
 
 //input command =>
 // base with alias -b or --b, type =>number
@@ -19,5 +20,5 @@ const createAndReadFile = async (num) => {
 }
 
 createAndReadFile(base)
-    .then((response) => console.log(response, '\nfinished load'))
+    .then((response) => console.log(response, '\nfinished load'.rainbow))
     .catch(error => console.log('AN ERROR HAS OCURRED ', error))
